@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { DeckAnalysis, HextechCard } from '../types';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: 'AIzaSyCMHUc3y3wC6jgC4YbHUor3IhdhZb_OgI4' });
 
 export const analyzeDeck = async (cards: HextechCard[]): Promise<DeckAnalysis> => {
   if (!cards || cards.length === 0) {

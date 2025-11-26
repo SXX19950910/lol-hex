@@ -5,7 +5,7 @@ import { HexCard } from './components/HexCard';
 import { AnalysisModal } from './components/AnalysisModal';
 import { ChampionSelector } from './components/ChampionSelector';
 import { analyzeDeck, recommendAugments } from './services/gemini';
-import { Search, Filter, Trash2, Box, Zap, Trophy, X } from 'lucide-react';
+import { Search, Filter, Box, Zap, Trophy, X } from 'lucide-react';
 
 const App: React.FC = () => {
   const [selectedCards, setSelectedCards] = useState<HextechCard[]>([]);
