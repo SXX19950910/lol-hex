@@ -1,0 +1,5 @@
+{
+  "name": "海克斯大乱斗卡片选择器",
+  "description": "英雄联盟海克斯强化（大乱斗/斗魂竞技场模式）的综合选择器。浏览、筛选并通过 Gemini AI 分析卡片之间的协同效应。",
+  "requestFramePermissions": []
+}
