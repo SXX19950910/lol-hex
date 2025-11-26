@@ -203,7 +203,7 @@ export const HexCard: React.FC<HexCardProps> = ({ card, isSelected, onSelect }) 
       className={`
         relative group cursor-pointer 
         flex flex-col
-        h-[280px] sm:h-[300px] md:h-[360px] 
+        h-[340px] sm:h-[380px] md:h-[420px] 
         w-full
         transition-all duration-200 ease-out
         ${isSelected ? 'z-10 -translate-y-2' : 'z-0 hover:z-30 hover:-translate-y-2'}
@@ -257,7 +257,7 @@ export const HexCard: React.FC<HexCardProps> = ({ card, isSelected, onSelect }) 
           }`} />
 
           {/* Icon Area - Compact on mobile */}
-          <div className="flex justify-center mb-1 sm:mb-4 relative z-10 shrink-0 mt-3 sm:mt-5">
+          <div className="flex justify-center mb-1 sm:mb-2 relative z-10 shrink-0 mt-3 sm:mt-4">
             <div className={`
               w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 
               rotate-45 flex items-center justify-center 
@@ -271,16 +271,16 @@ export const HexCard: React.FC<HexCardProps> = ({ card, isSelected, onSelect }) 
           </div>
 
           {/* Text Content */}
-          <div className="relative z-10 text-center flex flex-col items-center flex-1 overflow-hidden mt-5 sm:mt-5">
-            <h3 className={`font-serif text-sm sm:text-lg md:text-xl font-bold mb-1 sm:mb-3 leading-tight ${titleColorClass} line-clamp-1`}>
+          <div className="relative z-10 text-center flex flex-col items-center flex-1 overflow-hidden mt-1 sm:mt-2 min-h-0">
+            <h3 className={`font-serif text-sm sm:text-lg md:text-xl font-bold mb-1 sm:mb-2 leading-tight ${titleColorClass} line-clamp-1`}>
               {card.name}
             </h3>
             
             {/* Divider */}
-            <div className={`w-8 sm:w-16 h-px mb-3 sm:mb-3 ${isPrismatic ? 'bg-fuchsia-500/50' : isGold ? 'bg-yellow-500/50' : 'bg-slate-500/50'}`} />
+            <div className={`w-8 sm:w-16 h-px mb-2 sm:mb-3 shrink-0 ${isPrismatic ? 'bg-fuchsia-500/50' : isGold ? 'bg-yellow-500/50' : 'bg-slate-500/50'}`} />
             
             {/* Description - Scroll enabled, padded */}
-            <div className="flex-1 overflow-y-auto w-full px-1">
+            <div className="flex-1 overflow-y-auto w-full px-1 custom-scrollbar">
               <p className={`text-[11px] sm:text-xs md:text-sm leading-relaxed ${isPrismatic ? 'text-fuchsia-100/90' : isGold ? 'text-yellow-100/90' : 'text-slate-300'}`}>
                 {card.description}
               </p>
